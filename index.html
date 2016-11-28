@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+  <title>SkunkTest uploader.html</title>
+</head>
+<body>
+<form enctype="multipart/form-data" action="uploader.php" method="post">
+  <!-- MAX_FILE_SIZEは、必ず"file" input フィールドより前になければなりません -->
+  <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+  <!-- input 要素の name 属性の値が、$_FILES 配列のキーになります -->
+  <input type="file" name="upfile">
+  <input type="submit" value="画像ファイルを送信" />
+</form>
+</body>
+</html>
